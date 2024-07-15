@@ -2,15 +2,15 @@ import { Icons } from "@/components/icons";
 import { CodeIcon, HomeIcon, NotebookIcon, PencilLine } from "lucide-react";
 
 export const DATA = {
-  name: "Sam Wuu",
+  name: "Sam",
   initials: "DV",
   url: "https://sam5.pro",
   location: "GD, China",
   locationLink: "https://www.google.com/maps/place/guangdong",
   description:
-    "2022 年底，我辞去了软件工程师的工作，全身心投入到建立和扩展自己的 SaaS 业务中，软件工程师转型为创造者。我喜欢创造事物并帮助他人。",
+    "👨‍💻 7年工作经验: 5年前端开发, 3年后端开发, 包括移动端和区块链开发经验 🔗📱",
   summary:
-    "2022 年底，我辞去了软件工程师的工作，全身心投入到建立和扩展自己的 SaaS 业务中。过去，我攻读了计算机科学和商业双学位，在硅谷的大型科技公司实习，并参加了 21 多次黑客马拉松比赛。我也很高兴成为 buildspace 有史以来第一个面对面的团队，名为 buildspace sf1。",
+    "熟练使用 React、Next.js和 Node,js。有移动端开发经验比如React Native 。在后端方面熟悉Java, MySQL、PostgreSQL和 GraphQL 数据库。熟练使用 Git、Docker、AWS、Jenkins和 Nginx 等工具和平台。区块链熟悉使用 Web3.js wagmiviemsonala.js 等库与以太坊区块链跟solana公链进行交互包括跟主链交互跟智能合约的交互",
   avatarUrl: "/icons/icon.svg",
   skills: [
     "React",
@@ -21,173 +21,116 @@ export const DATA = {
     "Go",
     "Postgres",
     "Docker",
-    "Kubernetes",
+    "Blockchain",
     "Java",
-    "C++",
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
     { href: "/blog", icon: NotebookIcon, label: "Blog" },
-    { href: "#", icon: CodeIcon, label: "Projects" },
-    { href: "#", icon: PencilLine, label: "Notes" },
+    { href: "#projects", icon: CodeIcon, label: "Projects" },
+    { href: "#contact", icon: PencilLine, label: "Contact" },
   ],
   contact: {
-    email: "hello@example.com",
-    tel: "+123456789",
+    email: "samwuu67@gmail.com",
+    tel: "+8618682062694",
     social: {
       GitHub: {
         name: "GitHub",
-        url: "https://dub.sh/dillion-github",
+        url: "https://github.com/sam5-hub",
         icon: Icons.github,
-
-        navbar: true,
-      },
-      LinkedIn: {
-        name: "LinkedIn",
-        url: "https://dub.sh/dillion-linkedin",
-        icon: Icons.linkedin,
 
         navbar: true,
       },
       X: {
         name: "X",
-        url: "https://dub.sh/dillion-twitter",
+        url: "https://x.com/sungwo_ng5",
         icon: Icons.x,
 
         navbar: true,
       },
-      Youtube: {
-        name: "Youtube",
-        url: "https://dub.sh/dillion-youtube",
-        icon: Icons.youtube,
-        navbar: true,
-      },
       email: {
         name: "Send Email",
-        url: "#",
+        url: "mailto:samwuu67@gmail.com",
         icon: Icons.email,
-
-        navbar: false,
+        navbar: true,
       },
     },
   },
 
   work: [
     {
-      company: "Atomic Finance",
-      href: "https://atomic.finance",
+      company: "众智辰科技有限公司",
+      href: "https://www.zhipin.com/companys/bb26f2deb77749a81XV90t27F1A~.html",
       badges: [],
-      location: "Remote",
-      title: "Bitcoin Protocol Engineer",
+      location: "广东深圳",
+      title: "全栈开发工程师",
       logoUrl: "/atomic.png",
-      start: "May 2021",
-      end: "Oct 2022",
+      start: "May 2022",
+      end: "Jan 2024",
       description:
-        "Implemented the Bitcoin discreet log contract (DLC) protocol specifications as an open source Typescript SDK. Dockerized all microservices and setup production kubernetes cluster. Architected a data lake using AWS S3 and Athena for historical backtesting of bitcoin trading strategies. Built a mobile app using react native and typescript.",
+        "担任前端研发工程师,主要负责 Lioncash 催收系统的前端开发.落地了肯尼亚/尼日利亚/印尼的Lioncash业务,",
     },
     {
-      company: "Shopify",
+      company: "Zaful",
       badges: [],
-      href: "https://shopify.com",
-      location: "Remote",
-      title: "Software Engineer",
-      logoUrl: "/shopify.svg",
-      start: "January 2021",
-      end: "April 2021",
+      href: "https://www.zaful.com/",
+      location: "环球易购电子商务有限公司",
+      title: "全栈开发工程师",
+      logoUrl: "/icons/zaful.jpg",
+      start: "January 2019",
+      end: "April 2022",
       description:
-        "Implemented a custom Kubernetes controller in Go to automate the deployment of MySQL and ProxySQL custom resources in order to enable 2,000+ internal developers to instantly deploy their app databases to production. Wrote several scripts in Go to automate MySQL database failovers while maintaining master-slave replication topologies and keeping Zookeeper nodes consistent with changes.",
+        "担任 JAVA & 前端研发工程师,主要负责广告投放管理后台和供应链物流系统产品的前端开发,包括 PC端、H5端和移动端开发",
     },
     {
-      company: "Nvidia",
-      href: "https://nvidia.com/",
+      company: "深圳市辉煌明天科技",
+      href: "http://www.btomorrow.cn/about.html",
       badges: [],
-      location: "Santa Clara, CA",
-      title: "Software Engineer",
-      logoUrl: "/nvidia.png",
+      location: "广东,深圳",
+      title: "Java开发工程师",
+      logoUrl: "/icons/sun.png",
       start: "January 2020",
       end: "April 2020",
       description:
-        "Architected and wrote the entire MVP of the GeForce Now Cloud Gaming internal admin and A/B testing dashboard using React, Redux, TypeScript, and Python.",
+        " 担任 JAVA 工程师,主要负责捕鱼达人跟游戏聊天室接口开发",
     },
-    {
-      company: "Splunk",
-      href: "https://splunk.com",
-      badges: [],
-      location: "San Jose, CA",
-      title: "Software Engineer",
-      logoUrl: "/splunk.svg",
-      start: "January 2019",
-      end: "April 2019",
-      description:
-        "Co-developed a prototype iOS app with another intern in Swift for the new Splunk Phantom security orchestration product (later publicly demoed and launched at .conf annual conference in Las Vegas). Implemented a realtime service for the iOS app in Django (Python) and C++; serialized data using protobufs transmitted over gRPC resulting in an approximate 500% increase in data throughput.",
-    },
-    {
-      company: "Lime",
-      href: "https://li.me/",
-      badges: [],
-      location: "San Francisco, CA",
-      title: "Software Engineer",
-      logoUrl: "/lime.svg",
-      start: "January 2018",
-      end: "April 2018",
-      description:
-        "Proposed and implemented an internal ruby API for sending/receiving commands to scooters over LTE networks. Developed a fully automated bike firmware update system to handle asynchronous firmware updates of over 100,000+ scooters worldwide, and provide progress reports in real-time using React, Ruby on Rails, PostgreSQL and AWS EC2 saving hundreds of developer hours.",
-    },
-    {
-      company: "Mitre Media",
-      href: "https://mitremedia.com/",
-      badges: [],
-      location: "Toronto, ON",
-      title: "Software Engineer",
-      logoUrl: "/mitremedia.png",
-      start: "May 2017",
-      end: "August 2017",
-      description:
-        "Designed and implemented a robust password encryption and browser cookie storage system in Ruby on Rails. Leveraged the Yahoo finance API to develop the dividend.com equity screener",
-    },
+
   ],
   education: [
     {
-      school: "Buildspace",
-      href: "https://buildspace.so",
-      degree: "s3, s4, sf1, s5",
+      school: "东莞理工学院",
+      href: "https://www.dgut.edu.cn/",
+      degree: "学士学位",
       logoUrl: "/buildspace.jpg",
-      start: "2023",
-      end: "2024",
-    },
-    {
-      school: "University of Waterloo",
-      href: "https://uwaterloo.ca",
-      degree: "Bachelor's Degree of Computer Science (BCS)",
-      logoUrl: "/waterloo.png",
-      start: "2016",
-      end: "2021",
-    },
-    {
-      school: "Wilfrid Laurier University",
-      href: "https://wlu.ca",
-      degree: "Bachelor's Degree of Business Administration (BBA)",
-      logoUrl: "/laurier.png",
-      start: "2016",
-      end: "2021",
-    },
-    {
-      school: "International Baccalaureate",
-      href: "https://ibo.org",
-      degree: "IB Diploma",
-      logoUrl: "/ib.png",
-      start: "2012",
+      start: "2011",
       end: "2016",
+    },
+    {
+      school: "Udemy",
+      href: "https://www.udemy.com/",
+      degree: "Online Courses",
+      logoUrl: "/icons/udemy.png",
+      start: "2020",
+      end: "2022",
+    },
+    {
+      school: "Coursera",
+      href: "https://www.coursera.org/",
+      degree: "Online Courses",
+      logoUrl: "/icons/coursera.png",
+      start: "2022",
+      end: "2023",
     },
   ],
   projects: [
+
     {
-      title: "Chat Collect",
-      href: "https://chatcollect.com",
-      dates: "Jan 2024 - Feb 2024",
+      title: "Lioncash催收系统",
+      href: "https://lioncash.ng/",
+      dates: "Jan 2024 - Feb 2022",
       active: true,
       description:
-        "With the release of the [OpenAI GPT Store](https://openai.com/blog/introducing-the-gpt-store), I decided to build a SaaS which allows users to collect email addresses from their GPT users. This is a great way to build an audience and monetize your GPT API usage.",
+        "该系统结合了实时通信、音视频通话、文档处理、第三方支付集成等核心技术，旨在提供卓越的催收体验并确保数据的安全。",
       technologies: [
         "Next.js",
         "Typescript",
@@ -201,21 +144,20 @@ export const DATA = {
       links: [
         {
           type: "Website",
-          href: "https://chatcollect.com",
+          href: "https://lioncash.ng/",
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "",
-      video:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/chat-collect.mp4",
+      image: "/showcase/lioncash.png",
+      video: "",
     },
     {
-      title: "Magic UI",
-      href: "https://magicui.design",
-      dates: "June 2023 - Present",
+      title: "HidingElephant",
+      href: "https://hidingelephant.com/",
+      dates: "Feb 2023 - May 2024",
       active: true,
       description:
-        "Designed, developed and sold animated UI components for developers.",
+        "HidingElephant 是一个面向专业人士的 AI 驱动徽标设计工具,巧妙地融合了图标和文本。它具有用于定制设计的高级 AI 模型,可以轻松将其转换为矢量格式,并促进徽标设计中的协作和创造力",
       technologies: [
         "Next.js",
         "Typescript",
@@ -224,244 +166,160 @@ export const DATA = {
         "TailwindCSS",
         "Stripe",
         "Shadcn UI",
-        "Magic UI",
+        "GSAP",
       ],
       links: [
         {
           type: "Website",
-          href: "https://magicui.design",
+          href: "https://hidingelephant.com/",
           icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/magicuidesign/magicui",
-          icon: <Icons.github className="size-3" />,
         },
       ],
       image: "",
-      video: "https://cdn.magicui.design/bento-grid.mp4",
+      video: "/showcase/hiding-elephant-logo-maker.mp4",
     },
+    // {
+    //   title: "Lioncash风控系统",
+    //   href: "https://lioncash.ng/",
+    //   dates: "Jun 2020 - May 2021",
+    //   active: false,
+    //   description:
+    //     "主导了风控和催收系统的全面设计与实现。该系统对贷款风险进行精准评估，并通过实时数据分析提升催收效率，从而优化了整体贷款业务流程，提高了客户满意度",
+    //   technologies: [
+    //     "React",
+    //     "JavaScript",
+    //     "Echarts",
+    //     "Machine Learning",
+    //     "Big Data",
+    //     "High Performance Databases",
+    //     "WebRTC",
+    //     "Live Chat",
+    //     "Video Call",
+    //   ],
+    //   links: [
+    //     {
+    //       type: "Website",
+    //       href: "https://lioncash.ng/",
+    //       icon: <Icons.globe className="size-3" />,
+    //     },
+    //   ],
+    //   image: "/showcase/echonote.png",
+    //   video: "",
+    // },
     {
-      title: "llm.report",
-      href: "https://llm.report",
-      dates: "April 2023 - September 2023",
+      title: "Zaful广告投放管理",
+      href: "https://www.zaful.com/",
+      dates: "Aug 2021 - Jan 2024",
       active: true,
       description:
-        "Developed an open-source logging and analytics platform for OpenAI: Log your ChatGPT API requests, analyze costs, and improve your prompts.",
+        "我参与了两个核心项目：广告投放管理后台和供应链物流系统。在广告管理后台项目中，主导了前端界面的开发，实现了数据的动态可视化和实时性能监控。在供应链物流系统中，重点针对项目进行优化，提高了整体运营效率",
+      technologies: [
+        "Vue.js",
+        "JavaScript",
+        "HTML",
+        "CSS",
+        "Echarts",
+        "Docker",
+        "Jenkins",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://www.zaful.com/",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "",
+      video: "/showcase/zaful-01.mp4",
+    },
+    {
+      title: "goflashdeals",
+      href: "https://goflashdeals.com/",
+      dates: "Feb 2023 - May 2024",
+      active: true,
+      description:
+        "这是一个来自美国的折扣网站& 使用nextjs+nestjs+antd pro开发。系统结合实时通信、音视频通话、文档处理、第三方支付集成等核心技术,显著提高了流程的效率并确保了数据的安全。",
       technologies: [
         "Next.js",
         "Typescript",
         "PostgreSQL",
         "Prisma",
         "TailwindCSS",
-        "Shadcn UI",
-        "Magic UI",
         "Stripe",
-        "Cloudflare Workers",
+        "Shadcn UI",
+        "GSAP",
       ],
       links: [
         {
           type: "Website",
-          href: "https://llm.report",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/dillionverma/llm.report",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "",
-      video: "https://cdn.llm.report/openai-demo.mp4",
-    },
-    {
-      title: "Automatic Chat",
-      href: "https://automatic.chat",
-      dates: "April 2023 - March 2024",
-      active: true,
-      description:
-        "Developed an AI Customer Support Chatbot which automatically responds to customer support tickets using the latest GPT models.",
-      technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Shadcn UI",
-        "Magic UI",
-        "Stripe",
-        "Cloudflare Workers",
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://automatic.chat",
+          href: "https://goflashdeals.com/",
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "",
-      video:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/automatic-chat.mp4",
+      image: "/showcase/goflashdeals.png",
+      video: "",
     },
+   
+
   ],
-  hackathons: [
-     
+  hobbys: [
+
+  
     {
-      title: "HackDavis",
-      dates: "January 20th - 21st, 2018",
-      location: "Davis, California",
-      description:
-        "Developed a mobile application which allocates a daily carbon emission allowance to users to move towards a sustainable environment.",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/hack-davis.png",
-      win: "Best Data Hack",
-      mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2018/white.svg",
+      title: "Lunroo",
+      dates: "August, 2023",
+      description: "Lunroo - 社交媒体营销的 AI 工具",
+      image: "/icons/lunroo.svg",
       links: [
-        {
-          title: "Devpost",
-          icon: <Icons.globe className="h-4 w-4" />,
-          href: "https://devpost.com/software/my6footprint",
-        },
-        {
-          title: "ML",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/Wallet6/my6footprint-machine-learning",
-        },
-        {
-          title: "iOS",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/Wallet6/CarbonWallet",
-        },
-        {
-          title: "Server",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/Wallet6/wallet6-server",
-        },
-      ],
-    },
-    
-    {
-      title: "Hack The 6ix",
-      dates: "August 26th - 27th, 2017",
-      location: "Toronto, Ontario",
-      description:
-        "Developed an open platform for people shipping items to same place to combine shipping costs and save money.",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/hack-the-6ix.jpg",
-      mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2017/white.svg",
-      links: [
-        {
-          title: "Source",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/ShareShip/ShareShip",
-        },
         {
           title: "Site",
           icon: <Icons.globe className="h-4 w-4" />,
-          href: "https://share-ship.herokuapp.com/",
+          href: "https://lunroo.com/",
         },
-      ],
+      ]
     },
+
     {
-      title: "Stupid Hack Toronto",
-      dates: "July 23rd, 2017",
-      location: "Toronto, Ontario",
-      description:
-        "Developed a chrome extension which tracks which facebook profiles you have visited and immediately texts your girlfriend if you visited another girls page.",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/stupid-hackathon.png",
+      title: "Web Transpose",
+      dates: "Jan, 2024",
+      description: "Web Transpose 是一个 AI 网页抓取和爬虫 API 工具,可以高效地从网站提取产品名称和价格等数据。其 AI 增强的结构学习和分布式云爬行使其成为企业数据提取的理想选择。",
+      image: "/icons/webtranspose.svg",
       links: [
         {
-          title: "Source",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/nsagirlfriend/nsagirlfriend",
-        },
-      ],
-    },
-    
-    {
-      title: "Open Source Circular Economy Days Hackathon",
-      dates: "June 10th, 2017",
-      location: "Toronto, Ontario",
-      description:
-        "Developed a custom admin interface for food waste startup <a href='http://genecis.co/'>Genecis</a> to manage their data and provide analytics.",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/open-source-circular-economy-days.jpg",
-      win: "1st Place Winner",
-      links: [
-        {
-          title: "Source",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/dillionverma/genecis",
-        },
-      ],
-    },
-    {
-      title: "Make School's Student App Competition 2017",
-      dates: "May 19th - 21st, 2017",
-      location: "International",
-      description: "Improved PocketDoc and submitted to online competition",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/make-school-hackathon.png",
-      win: "Top 10 Finalist | Honourable Mention",
-      links: [
-        {
-          title: "Medium Article",
+          title: "Site",
           icon: <Icons.globe className="h-4 w-4" />,
-          href: "https://medium.com/make-school/the-winners-of-make-schools-student-app-competition-2017-a6b0e72f190a",
-        },
-        {
-          title: "Devpost",
-          icon: <Icons.globe className="h-4 w-4" />,
-          href: "https://devpost.com/software/pocketdoc-react-native",
-        },
-        {
-          title: "YouTube",
-          icon: <Icons.youtube className="h-4 w-4" />,
-          href: "https://www.youtube.com/watch?v=XwFdn5Rmx68",
-        },
-        {
-          title: "Source",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/dillionverma/pocketdoc-react-native",
+          href: "https://www.webtranspose.com/",
         },
       ],
+      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
     },
     {
-      title: "HackMining",
-      dates: "May 12th - 14th, 2017",
-      location: "Toronto, Ontario",
-      description: "Developed neural network to optimize a mining process",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/hack-mining.png",
-      links: [],
-    },
-    {
-      title: "Waterloo Equithon",
-      dates: "May 5th - 7th, 2017",
-      location: "Waterloo, Ontario",
-      description:
-        "Developed Pocketdoc, an app in which you take a picture of a physical wound, and the app returns common solutions or cures to the injuries or diseases.",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/waterloo-equithon.png",
+      title: "HidingElephant",
+      dates: "Jan, 2024",
+      description: "HidingElephant 是一个面向专业人士的 AI 驱动徽标设计工具,巧妙地融合了图标和文本。它具有用于定制设计的高级 AI 模型,可以轻松将其转换为矢量格式,并促进徽标设计中的协作和创造力。",
+      image: "/icons/app-logo-transparent.svg",
       links: [
         {
-          title: "Devpost",
+          title: "Site",
           icon: <Icons.globe className="h-4 w-4" />,
-          href: "https://devpost.com/software/pocketdoc-react-native",
-        },
-        {
-          title: "YouTube",
-          icon: <Icons.youtube className="h-4 w-4" />,
-          href: "https://www.youtube.com/watch?v=XwFdn5Rmx68",
-        },
-        {
-          title: "Source",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/dillionverma/pocketdoc-react-native",
+          href: "https://www.hidingelephant.com/",
         },
       ],
+      iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
     },
-     
+    {
+      title: "LOGO Theme AI",
+      dates: "Jan, 2024",
+      description: "Logo Theme AI 利用人工智能为各种活动和风格创建定制的标志模型,支持各种文件格式。拥有超过200个模板,用户无需设计专业知识即可轻松转换标志以满足数字品牌需求,从社交媒体到新闻通讯。",
+      image: "/icons/back-to-school.png",
+      links: [
+        {
+          title: "Site",
+          icon: <Icons.globe className="h-4 w-4" />,
+          href: "https://logo-theme-ai.com/",
+        },
+      ]
+    },
+
   ],
 } as const;
