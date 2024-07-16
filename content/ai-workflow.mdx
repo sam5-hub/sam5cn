@@ -1,0 +1,130 @@
+---
+title: 如何使用 OpenAI、Gemini 和 React Flow 驱动 AI Workflow 应用
+description: 使用 OpenAI、Gemini 和 React Flow 构建 AI Workflow 应用的简要指南
+publishedAt: "2024-07-16"
+tags: ["OpenAI", "Gemini", "React Flow", "AI Workflow"]
+published: true
+---
+
+在本文中，我们将简要介绍如何使用 OpenAI、Gemini 和 React Flow 构建一个 AI Workflow 应用。
+
+## 1. 设置 OpenAI
+
+首先，安装 OpenAI 客户端：
+
+```bash
+npm install openai
+```
+
+配置 OpenAI 客户端：
+
+```bash
+// lib/openai.js
+import { Configuration, OpenAIApi } from 'openai';
+
+const configuration = new Configuration({
+  apiKey: process.env.OPENAI_API_KEY,
+});
+
+const openai = new OpenAIApi(configuration);
+
+export default openai;
+```
+
+2. 集成 Gemini
+安装 Gemini
+
+```bash
+npm install @gemini-ai/gemini
+
+
+// lib/gemini.js
+import Gemini from 'gemini';
+
+const gemini = new Gemini({
+  apiKey: process.env.GEMINI_API_KEY,
+});
+
+export default gemini;
+
+```
+
+3. 使用 React Flow 构建工作流
+安装 React Flow
+创建简单的 React Flow 组件：
+
+```bash
+npm install reactflow
+
+import React from 'react';
+import ReactFlow from 'reactflow';
+import 'reactflow/dist/style.css';
+
+const elements = [
+  { id: '1', type: 'input', data: { label: 'Start' }, position: { x: 250, y: 0 } },
+  { id: '2', data: { label: 'AI Process' }, position: { x: 250, y: 100 } },
+  { id: '3', type: 'output', data: { label: 'End' }, position: { x: 250, y: 200 } },
+  { id: 'e1-2', source: '1', target: '2', animated: true },
+  { id: 'e2-3', source: '2', target: '3', animated: true },
+];
+
+const Workflow = () => (
+  <div style={{ height: 500 }}>
+    <ReactFlow elements={elements} />
+  </div>
+);
+
+export default Workflow;
+```
+
+4. 综合示例
+将 OpenAI 和 Gemini 集成到工作流中：
+
+```bash
+import React, { useState } from 'react';
+import ReactFlow from 'reactflow';
+import openai from '../lib/openai';
+import gemini from '../lib/gemini';
+import 'reactflow/dist/style.css';
+
+const elements = [
+  { id: '1', type: 'input', data: { label: 'Start' }, position: { x: 250, y: 0 } },
+  { id: '2', data: { label: 'AI Process' }, position: { x: 250, y: 100 } },
+  { id: '3', type: 'output', data: { label: 'End' }, position: { x: 250, y: 200 } },
+  { id: 'e1-2', source: '1', target: '2', animated: true },
+  { id: 'e2-3', source: '2', target: '3', animated: true },
+];
+
+const Workflow = () => {
+  const [aiResult, setAiResult] = useState('');
+
+  const handleAIProcess = async () => {
+    const openaiResponse = await openai.createCompletion({
+      model: 'text-davinci-003',
+      prompt: 'Generate a task description',
+      max_tokens: 50,
+    });
+
+    const geminiResponse = await gemini.analyze({
+      text: openaiResponse.data.choices[0].text,
+    });
+
+    setAiResult(geminiResponse.analysis);
+  };
+
+  return (
+    <div style={{ height: 500 }}>
+      <ReactFlow elements={elements} />
+      <button onClick={handleAIProcess}>Run AI Process</button>
+      {aiResult && <div>Result: {aiResult}</div>}
+    </div>
+  );
+};
+
+export default Workflow;
+
+
+```
+
+通过上述步骤，你可以构建一个简单的 AI Workflow 应用，将 OpenAI 和 Gemini 的能力集成到 React Flow 中，创建动态的 AI 驱动工作流。
+

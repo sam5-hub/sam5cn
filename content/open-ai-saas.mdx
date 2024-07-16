@@ -1,0 +1,48 @@
+---
+title: 如何构建基于 OpenAI 和 Next.js 的流行 AI 驱动应用
+description: 详细步骤和示例代码，带你从零开始构建一个 AI 驱动的应用
+publishedAt: "2024-06-18"
+tags: ["AI", "OpenAI", "Next.js", "教程"]
+published: true
+---
+
+在本文中，我们将介绍如何使用 OpenAI 的 API 和 Next.js 框架来构建一个流行的 AI 驱动应用。通过这个教程，你将学会如何集成 OpenAI 的强大功能，并利用 Next.js 的现代前端开发框架来构建一个高效、用户友好的应用。
+
+## 准备工作
+
+在开始之前，请确保你已经完成以下准备工作：
+
+1. 注册一个 OpenAI 账号并获取 API 密钥。
+2. 安装 Node.js 和 npm（或 yarn）。
+3. 创建一个新的 Next.js 项目。
+
+## 第一步：设置 Next.js 项目
+
+首先，我们需要创建一个新的 Next.js 项目。如果你还没有安装 `create-next-app`，可以通过以下命令进行安装：
+
+```bash
+npx create-next-app@latest ai-driven-app
+cd ai-driven-app
+```
+第二步：安装所需依赖
+在项目目录中，安装 OpenAI 的官方客户端库：
+
+```bash
+npm install openai
+```
+
+第三步：配置 OpenAI 客户端
+在项目根目录下创建一个文件 lib/openai.js 来配置 OpenAI 客户端：
+
+```bash
+// lib/openai.js
+import { Configuration, OpenAIApi } from 'openai';
+
+const configuration = new Configuration({
+  apiKey: process.env.OPENAI_API_KEY,
+});
+
+const openai = new OpenAIApi(configuration);
+
+export default openai;
+```

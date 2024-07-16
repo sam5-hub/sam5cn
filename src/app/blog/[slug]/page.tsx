@@ -62,7 +62,7 @@ export default async function Blog({
   }
 
   return (
-    <section id="blog">
+    <section id="blog" className="flex flex-col items-center gap-4">
       <script
         type="application/ld+json"
         suppressHydrationWarning
@@ -85,18 +85,18 @@ export default async function Blog({
           }),
         }}
       />
-
-      <div className="title font-bold text-4xl tracking-tighter max-w-[650px] border p-4 rounded-full text-center flex flex-row items-center gap-4">
-        <Link href={"/blog"}>
-          <Button variant={"outline"}>Back</Button>
-        </Link>
+      <Link href={"/blog"}>
+          <Button variant={"outline"}>Blog List</Button>
+      </Link>
+      <div className="title font-bold text-4xl tracking-tighter max-w-[650px]  text-center flex flex-row items-center gap-4">
+        
         {post.metadata.title}
       </div>
       <div className="flex justify-between items-center mt-2 mb-8 text-sm max-w-[650px]">
         <Suspense fallback={<p className="h-5" />}>
-          {/* <p className="text-sm text-neutral-600 dark:text-neutral-400">
+          <p className="text-sm text-neutral-600 dark:text-neutral-400">
             {formatDate(post.metadata.publishedAt)}
-          </p> */}
+          </p>
         </Suspense>
       </div>
       <article
