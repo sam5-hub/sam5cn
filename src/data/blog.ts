@@ -25,8 +25,8 @@ export async function markdownToHTML(markdown: string) {
     .use(rehypePrettyCode, {
       // https://rehype-pretty.pages.dev/#usage
       theme: {
-        light: "min-light",
-        dark: "min-dark",
+        light: "github-light",
+        dark: "github-dark",
       },
       keepBackground: false,
     })

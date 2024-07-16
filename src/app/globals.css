@@ -23,7 +23,7 @@
       --muted-foreground: 0 0% 45.1%;
 
       --accent: 0 0% 96.1%;
-    --accent-foreground: 0 0% 9%;
+      --accent-foreground: 0 0% 9%;
 
       --destructive: 0 84.2% 60.2%;
       --destructive-foreground: 0 0% 98%;
@@ -33,6 +33,7 @@
       --ring: 0 0% 3.9%;
 
       --radius: 0.5rem;
+      --shiki-light: 0 0% 100%;
     }
 
     .dark {
@@ -63,6 +64,7 @@
       --border: 0 0% 14.9%;
       --input: 0 0% 14.9%;
       --ring: 0 0% 83.1%;
+      --shiki-dark: 210 11.1% 3.53%;
     }
   }
 
@@ -97,14 +99,14 @@
   
   code[data-theme*=" "],
   code[data-theme*=" "] span {
-    color: var(--shiki-light);
+    /* color: var(--shiki-light); */
     background-color: var(--shiki-light-bg);
   }
    
   @media (prefers-color-scheme: dark) {
     code[data-theme*=" "],
     code[data-theme*=" "] span {
-      color: var(--shiki-dark);
+      /* color: var(--shiki-dark); */
       background-color: var(--shiki-dark-bg);
     }
   }
