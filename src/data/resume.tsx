@@ -178,34 +178,34 @@ export const DATA = {
       image: "",
       video: "/showcase/hiding-elephant-logo-maker.mp4",
     },
-    // {
-    //   title: "Lioncash风控系统",
-    //   href: "https://lioncash.ng/",
-    //   dates: "Jun 2020 - May 2021",
-    //   active: false,
-    //   description:
-    //     "主导了风控和催收系统的全面设计与实现。该系统对贷款风险进行精准评估，并通过实时数据分析提升催收效率，从而优化了整体贷款业务流程，提高了客户满意度",
-    //   technologies: [
-    //     "React",
-    //     "JavaScript",
-    //     "Echarts",
-    //     "Machine Learning",
-    //     "Big Data",
-    //     "High Performance Databases",
-    //     "WebRTC",
-    //     "Live Chat",
-    //     "Video Call",
-    //   ],
-    //   links: [
-    //     {
-    //       type: "Website",
-    //       href: "https://lioncash.ng/",
-    //       icon: <Icons.globe className="size-3" />,
-    //     },
-    //   ],
-    //   image: "/showcase/echonote.png",
-    //   video: "",
-    // },
+    {
+      title: "Lioncash风控系统",
+      href: "https://lioncash.ng/",
+      dates: "Jun 2020 - May 2021",
+      active: false,
+      description:
+        "主导了风控和催收系统的全面设计与实现。该系统对贷款风险进行精准评估，并通过实时数据分析提升催收效率，从而优化了整体贷款业务流程，提高了客户满意度",
+      technologies: [
+        "React",
+        "JavaScript",
+        "Echarts",
+        "Machine Learning",
+        "Big Data",
+        "High Performance Databases",
+        "WebRTC",
+        "Live Chat",
+        "Video Call",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://lioncash.ng/",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/showcase/echonote.png",
+      video: "",
+    },
     {
       title: "Zaful广告投放管理",
       href: "https://www.zaful.com/",
@@ -232,33 +232,7 @@ export const DATA = {
       image: "",
       video: "/showcase/zaful-01.mp4",
     },
-    {
-      title: "goflashdeals",
-      href: "https://goflashdeals.com/",
-      dates: "Feb 2023 - May 2024",
-      active: true,
-      description:
-        "这是一个来自美国的折扣网站& 使用nextjs+nestjs+antd pro开发。系统结合实时通信、音视频通话、文档处理、第三方支付集成等核心技术,显著提高了流程的效率并确保了数据的安全。",
-      technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Stripe",
-        "Shadcn UI",
-        "GSAP",
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://goflashdeals.com/",
-          icon: <Icons.globe className="size-3" />,
-        },
-      ],
-      image: "/showcase/goflashdeals.png",
-      video: "",
-    },
+
    
 
   ],
