@@ -31,7 +31,7 @@ export const DATA = {
     { href: "#contact", icon: PencilLine, label: "Contact" },
   ],
   contact: {
-    email: "samwuu67@gmail.com",
+    email: "sungwong555@gmail.com",
     tel: "+8618682062694",
     social: {
       GitHub: {
@@ -50,7 +50,7 @@ export const DATA = {
       },
       email: {
         name: "Send Email",
-        url: "mailto:samwuu67@gmail.com",
+        url: "mailto:sungwong555@gmail.com",
         icon: Icons.email,
         navbar: true,
       },
@@ -110,16 +110,8 @@ export const DATA = {
       href: "https://www.udemy.com/",
       degree: "Online Courses",
       logoUrl: "/icons/udemy.png",
-      start: "2020",
-      end: "2022",
-    },
-    {
-      school: "Coursera",
-      href: "https://www.coursera.org/",
-      degree: "Online Courses",
-      logoUrl: "/icons/coursera.png",
       start: "2022",
-      end: "2023",
+      end: "2024",
     },
   ],
   projects: [
